@@ -1,0 +1,26 @@
+<mat-card class="card-width">
+
+  <mat-toolbar >
+    <ng-container *ngFor="let item of itemList">
+    <mat-toolbar-row >
+        <span *ngIf="item.path" [routerLink]= "item.path" routerLinkActive="sq-link-active" 
+          #rla="routerLinkActive">
+            {{item.name}}
+          </span>
+      <span *ngIf="item.clickHandler" (click)="item.clickHandler($event,item.name)">
+        {{item.name}}
+      </span>
+    </mat-toolbar-row>
+    </ng-container>
+  </mat-toolbar>
+
+  <mat-card-actions *ngIf="buttonLabel">
+  <br/>
+  <mat-divider></mat-divider>
+   <div>
+    <button mat-button [color]="buttonColor" (click)="buttonClickHandler()">
+      {{buttonLabel}}
+    </button>
+   </div>
+  </mat-card-actions>
+</mat-card>

@@ -1,0 +1,12 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h3>
+    {{ title }}!
+  </h3>
+
+</div>
+
+<app-card-toolbar [itemList]="sqList" buttonColor="primary" (sClick)="onButtonClick()" 
+    buttonLabel={{buttonLabel}} tabindex="2">Loading app-card-toolbar...</app-card-toolbar>
+
+<router-outlet></router-outlet>
