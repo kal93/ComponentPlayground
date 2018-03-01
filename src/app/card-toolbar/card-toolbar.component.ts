@@ -15,10 +15,10 @@ export class CardToolbarComponent  {
 
   @Input() itemList: ListConfig;
 
-  @Output() sClick = new EventEmitter();
+  @Output() sqClick = new EventEmitter();
 
   buttonClickHandler() {
-    this.sClick.emit();
+    this.sqClick.emit();
   }
 }
 

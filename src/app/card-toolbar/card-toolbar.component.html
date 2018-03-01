@@ -3,7 +3,7 @@
   <mat-toolbar >
     <ng-container *ngFor="let item of itemList">
     <mat-toolbar-row >
-        <span *ngIf="item.path" [routerLink]= "item.path" routerLinkActive="sq-link-active" 
+        <span *ngIf="item.path" [routerLink]= "item.path" routerLinkActive="active-link" 
           #rla="routerLinkActive">
             {{item.name}}
           </span>
