@@ -1,5 +1,4 @@
 
-/deep/ .card-width {
-
-    max-width: 100px;
+::ng-deep .card-width {
+    width: 100px !important;
 }
